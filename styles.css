@@ -1,0 +1,158 @@
+/* header */
+html{
+    scroll-behavior: smooth;
+}
+.header nav{
+    float: right;
+    margin-right: 40px;
+    font-size: 25px;
+}
+
+.header{
+    background-color:white;
+}
+.header a{
+    margin-left: 80px;
+}
+
+.header h2{
+    margin-left: 40px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.introduction{
+    padding-top: 200px;
+    padding-bottom: 300px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(43, 43, 43));
+}
+
+.introduction-name{
+    font-size: 20px;
+    margin-left: 120px;
+    line-height: 80px;
+}
+span{
+    color:red;
+}
+.introduction-name button{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.introduction-name button:hover{
+    background-color: rgb(212, 0, 0);
+    
+}
+
+.avatar{
+    display: flex;
+    float: right;
+    background-image: url("/images/abstract.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 200px;
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    transform: rotate(45deg);
+
+}
+.introduction img{
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    transform: rotate(-45deg);
+}
+.section-title{
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+.section-title::after{
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 44px;
+    background-color: black;
+}
+
+.biography{
+    margin-top: 200px;
+    margin-bottom: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+.biography p{
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 100px;
+}
+.biography img{
+    height: 350px;
+    width: 300px;
+}
+
+.skillset{
+    line-height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 500px;
+}
+.skillset li{
+    list-style-type: none;
+    font-size: 30px;
+    word-spacing:50px;
+}
+.skillset img{
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    margin-right:20px;
+}
+
+/* Contact info */
+input{
+    background-color: rgb(247, 247, 247);
+    height: 50px;
+    width: 1000px;
+    padding-left:10px;
+    font-weight: bold;
+}
+form{
+    line-height: 70px;
+    margin-top: 50px;
+    margin-bottom: 400px;
+}
+#message{
+    padding-bottom: 200px;
+    width: 1000px;
+}
+
+.submit button{
+    background-color: rgb(250, 198, 29);
+    border: none;
+    color: white;
+    padding: 12px 104px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.submit button:hover{
+    background-color: rgb(206, 179, 25);
+}

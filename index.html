@@ -3,10 +3,8 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <title>Tommy Nguyen's portfolio</title>
-        
-    </head>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=KoHo:wght@500&display=swap" rel="stylesheet">    
     <body>
-        
         <div class="header">
             <nav>
                 <a>Home</a>
@@ -29,7 +27,7 @@
         </div>
         <div class="biography">
             <img src="images/IMG_6201.jpg" alt="portrait"/>
-            <p>My name is Tommy Nguyen</br>I am a self-learn coder from Codecademy.</br>A biochemistry major graduate but soon realize</br>coding is my passion</p>
+            <p>My name is Tommy Nguyen</br>I am a self-learn coder from Codecademy.</br>A biochemistry major graduate but soon realize</br>coding is my <span>passion</span>.</p>
         </div>
         <div class="section-title" id="skills">
             <h2>Skills</h2>
@@ -44,10 +42,28 @@
                     <li><img src="images/git-icon.png" alt="git-icon">GIT</li>
                 </ul>
             </div>
+            <div class="check-works">
+                <h3>CHECK LATEST WORKS</h3>
+                <label>Codecademy</label>
+                <div id="myProgress">
+                    <div id="codecademy"></div>
+                </div>
+                <label>Code practice</label>
+                <div id="myProgress">
+                    <div id="code-practice"></div>
+                </div>
+                <label>Code Challenge</label>
+                <div id="myProgress">
+                    <div id="code-challenge"></div>
+                </div>
+                <button onclick="move()">Click Me</button>
+            </div>
+            
         </div>
+        
         <div class="section-title" id="contact">
             <h2>Contact</h2>
-            <form class=submit>
+            <form class=submit method="post">
                 <input type="text" name="name" placeholder="NAME"></br>
                 <input type="text" name="email" placeholder="EMAIL"></br>
                 <input id="message" type="text" name="message" placeholder="MESSAGE"></br>
@@ -57,7 +73,6 @@
         <script src="main.js"></script>
     </body>
     <footer>
-
-        
+        <p>Copyright</p>
     </footer>
 </html>

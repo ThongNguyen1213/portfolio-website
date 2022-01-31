@@ -1,11 +1,12 @@
 /* header */
 html{
     scroll-behavior: smooth;
+    overflow:auto
 }
 .header nav{
     float: right;
     margin-right: 40px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .header{
@@ -13,24 +14,31 @@ html{
 }
 .header a{
     margin-left: 80px;
+    font-family: audiowide;
+    text-decoration: none;
 }
 
 .header h2{
     margin-left: 40px;
     letter-spacing: 1px;
     word-spacing: 4px;
+    font-family: audiowide;
 }
 
+/* Introduction */
 .introduction{
-    padding-top: 200px;
-    padding-bottom: 300px;
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(43, 43, 43));
+    padding-bottom: 500px;
+    background-image: url("/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .introduction-name{
     font-size: 20px;
     margin-left: 120px;
+    padding-top: 200px;
     line-height: 80px;
+    
 }
 span{
     color:red;
@@ -56,6 +64,7 @@ span{
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 200px;
+    margin-top: 150px;
     height: 500px;
     width: 500px;
     justify-content: center;
@@ -70,21 +79,24 @@ span{
     border-radius: 200px;
     transform: rotate(-45deg);
 }
+
+/* Section */
 .section-title{
     text-align: center;
     position: relative;
     margin-top: 40px;
+    font-size: 25px;
 }
 
 .section-title::after{
     position: absolute;
     content: '';
-    width: 80px;
+    width: 100px;
     height: 2px;
     left: 0;
     right: 0;
     margin: auto;
-    top: 44px;
+    top: 55px;
     background-color: black;
 }
 
@@ -97,13 +109,15 @@ span{
     
 }
 .biography p{
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 80px;
+    font-size: 30px;
     margin-left: 100px;
+    font-family: Koho;
+
 }
 .biography img{
-    height: 350px;
-    width: 300px;
+    height: 550px;
+    width: 480px;
 }
 
 .skillset{
@@ -111,7 +125,7 @@ span{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 500px;
 }
 .skillset li{
@@ -154,5 +168,53 @@ form{
     border-radius: 3px;
 }
 .submit button:hover{
+    background-color: rgb(206, 179, 25);
+}
+
+/* Progress Bar */
+#myProgress {
+    width: 400px;
+    background-color: #ddd;
+  }
+  
+  #codecademy {
+    width: 1px;
+    height: 10px;
+    background-color: #04AA6D;
+    text-align: end;
+  }
+  #code-practice{
+      width: 1px;
+      height: 10px;
+      background-color: green;
+      text-align: end;
+  }
+  #code-challenge{
+    width: 1px;
+    height: 10px;
+    background-color: rgb(223, 236, 34);
+    text-align: end;
+}
+.check-works{
+    background-color: rgb(241, 241, 241);
+    float: right;
+    margin-left: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    font-weight: bold;
+}
+
+.check-works button{
+    background-color: rgb(250, 198, 29);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 50px;
+}
+
+.check-works button:hover{
     background-color: rgb(206, 179, 25);
 }
